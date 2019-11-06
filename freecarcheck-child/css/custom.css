@@ -1,0 +1,68 @@
+.txt-center
+{
+	text-align: center;
+}
+#loading
+{
+  text-align: center !important;
+  height: 500px;
+  background: url('../img/ajax-loader.gif') no-repeat center !important;
+}
+#main
+{
+	text-align: center;
+}
+.mgt-50
+{
+	margin-top: 50px !important;
+}
+.car_img
+{
+    height: 95px;
+}
+.extra_spec
+{
+	border: 1px dashed;
+}
+
+.wd100
+{
+	width: 100% !important;
+}
+.txt-left
+{
+	text-align: left;
+}
+.mgl30
+{
+	margin-left: 30% !important;
+}
+.left_upgrade
+{
+	height: 250px;
+}
+.lh0
+{
+	line-height: 0px;
+}
+.car_brand
+{
+	width: 65px;
+    height: 50px;
+}
+.table-report tbody tr:nth-child(even) {
+    background-color: #d7d8da;
+}
+.table-report
+{
+	border: 1px solid #bbbcbd;
+	/*line-height: 40px;*/
+}
+.table-report tbody tr:first-child td:first-child
+{
+	vertical-align: middle;
+}	
+.pd0
+{
+	padding: 0px !important;
+}

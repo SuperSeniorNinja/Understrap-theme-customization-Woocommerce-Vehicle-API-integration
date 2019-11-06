@@ -1,0 +1,82 @@
+/*
+Error: Invalid CSS after "...lor}: #{$value}": expected "{", was ";"
+        on line 4 of /home/freecarc/public_html/wp-content/themes/freecarcheck-child/src/sass/bootstrap4/_root.scss
+        from line 11 of /home/freecarc/public_html/wp-content/themes/freecarcheck-child/sass/assets/bootstrap4.scss
+
+1: :root {
+2:   // Custom variable values only support SassScript inside `#{}`.
+3:   @each $color, $value in $colors {
+4:     --#{$color}: #{$value};
+5:   }
+6: 
+7:   @each $color, $value in $theme-colors {
+8:     --#{$color}: #{$value};
+9:   }
+
+Backtrace:
+/home/freecarc/public_html/wp-content/themes/freecarcheck-child/src/sass/bootstrap4/_root.scss:4
+/home/freecarc/public_html/wp-content/themes/freecarcheck-child/sass/assets/bootstrap4.scss:11
+/usr/local/share/gems/gems/sass-3.4.25/lib/sass/scss/parser.rb:1207:in `expected'
+/usr/local/share/gems/gems/sass-3.4.25/lib/sass/scss/parser.rb:1137:in `expected'
+/usr/local/share/gems/gems/sass-3.4.25/lib/sass/scss/parser.rb:1132:in `tok!'
+/usr/local/share/gems/gems/sass-3.4.25/lib/sass/scss/parser.rb:665:in `block'
+/usr/local/share/gems/gems/sass-3.4.25/lib/sass/scss/parser.rb:735:in `declaration_or_ruleset'
+/usr/local/share/gems/gems/sass-3.4.25/lib/sass/scss/parser.rb:685:in `block_child'
+/usr/local/share/gems/gems/sass-3.4.25/lib/sass/scss/parser.rb:674:in `block_contents'
+/usr/local/share/gems/gems/sass-3.4.25/lib/sass/scss/parser.rb:666:in `block'
+/usr/local/share/gems/gems/sass-3.4.25/lib/sass/scss/parser.rb:307:in `each_directive'
+/usr/local/share/gems/gems/sass-3.4.25/lib/sass/scss/parser.rb:222:in `special_directive'
+/usr/local/share/gems/gems/sass-3.4.25/lib/sass/scss/parser.rb:197:in `directive'
+/usr/local/share/gems/gems/sass-3.4.25/lib/sass/scss/parser.rb:685:in `block_child'
+/usr/local/share/gems/gems/sass-3.4.25/lib/sass/scss/parser.rb:674:in `block_contents'
+/usr/local/share/gems/gems/sass-3.4.25/lib/sass/scss/parser.rb:666:in `block'
+/usr/local/share/gems/gems/sass-3.4.25/lib/sass/scss/parser.rb:658:in `ruleset'
+/usr/local/share/gems/gems/sass-3.4.25/lib/sass/scss/parser.rb:684:in `block_child'
+/usr/local/share/gems/gems/sass-3.4.25/lib/sass/scss/parser.rb:674:in `block_contents'
+/usr/local/share/gems/gems/sass-3.4.25/lib/sass/scss/parser.rb:125:in `stylesheet'
+/usr/local/share/gems/gems/sass-3.4.25/lib/sass/scss/parser.rb:41:in `parse'
+/usr/local/share/gems/gems/sass-3.4.25/lib/sass/engine.rb:409:in `_to_tree'
+/usr/local/share/gems/gems/sass-3.4.25/lib/sass/engine.rb:315:in `to_tree'
+/usr/local/share/gems/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:327:in `block in visit_import'
+/usr/local/share/gems/gems/sass-3.4.25/lib/sass/stack.rb:88:in `block in with_import'
+/usr/local/share/gems/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
+/usr/local/share/gems/gems/sass-3.4.25/lib/sass/stack.rb:88:in `with_import'
+/usr/local/share/gems/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
+/usr/local/share/gems/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/local/share/gems/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/usr/local/share/gems/gems/sass-3.4.25/lib/sass/stack.rb:79:in `block in with_base'
+/usr/local/share/gems/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
+/usr/local/share/gems/gems/sass-3.4.25/lib/sass/stack.rb:79:in `with_base'
+/usr/local/share/gems/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/usr/local/share/gems/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/usr/local/share/gems/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `map'
+/usr/local/share/gems/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/usr/local/share/gems/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+/usr/local/share/gems/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/usr/local/share/gems/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+/usr/local/share/gems/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/usr/local/share/gems/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+/usr/local/share/gems/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/local/share/gems/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:161:in `visit'
+/usr/local/share/gems/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/usr/local/share/gems/gems/sass-3.4.25/lib/sass/tree/root_node.rb:36:in `css_tree'
+/usr/local/share/gems/gems/sass-3.4.25/lib/sass/tree/root_node.rb:20:in `render'
+/usr/local/share/gems/gems/sass-3.4.25/lib/sass/engine.rb:284:in `render'
+/usr/local/share/gems/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:494:in `update_stylesheet'
+/usr/local/share/gems/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/usr/local/share/gems/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `each'
+/usr/local/share/gems/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/usr/local/share/gems/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
+/usr/local/share/gems/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:331:in `block in watch'
+/usr/local/share/gems/gems/sass-3.4.25/vendor/listen/lib/listen/listener.rb:252:in `call'
+/usr/local/share/gems/gems/sass-3.4.25/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+/usr/local/share/gems/gems/sass-3.4.25/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+/usr/local/share/gems/gems/sass-3.4.25/vendor/listen/lib/listen/adapter.rb:254:in `call'
+/usr/local/share/gems/gems/sass-3.4.25/vendor/listen/lib/listen/adapter.rb:254:in `report_changes'
+/usr/local/share/gems/gems/sass-3.4.25/vendor/listen/lib/listen/adapter.rb:323:in `poll_changed_directories'
+/usr/local/share/gems/gems/sass-3.4.25/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"...lor}: #{$value}\": expected \"{\", was \";\"\A         on line 4 of /home/freecarc/public_html/wp-content/themes/freecarcheck-child/src/sass/bootstrap4/_root.scss\A         from line 11 of /home/freecarc/public_html/wp-content/themes/freecarcheck-child/sass/assets/bootstrap4.scss\A \A 1: :root {\A 2:   // Custom variable values only support SassScript inside `#{}`.\A 3:   @each $color, $value in $colors {\A 4:     --#{$color}: #{$value};\A 5:   }\A 6: \A 7:   @each $color, $value in $theme-colors {\A 8:     --#{$color}: #{$value};\A 9:   }"; }
